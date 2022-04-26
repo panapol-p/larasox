@@ -58,7 +58,6 @@ RUN docker-php-ext-install \
 
 # Install composer
 RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/bin --filename=composer 
-RUN composer self-update --1
 
 # install and enable php extension for phpBolt
 COPY config_docker/bolt.so /usr/local/etc/php/ext/bolt.so
